@@ -2,7 +2,7 @@ import { interval, timer } from "rxjs";
 
 const observer = {
   next: (val) => console.log("next: ", val),
-  complete: () => console.log("completed: "),
+  complete: () => console.log("completed "),
 };
 
 const hoyEn5sec = new Date();

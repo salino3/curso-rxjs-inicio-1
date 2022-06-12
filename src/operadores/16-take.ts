@@ -9,5 +9,5 @@ numeros$.pipe(
     take(3)
 ).subscribe({
     next: val => console.log('next: ', val),
-    complete: () => console.log('completed: ')
+    complete: () => console.log('completed ')
 })

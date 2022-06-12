@@ -19,5 +19,5 @@ interval(1000) // cada segundo sube de un número, se acumulan todos y al final 
   .pipe(take(5), tap(console.log), reduce(totalReducer))
   .subscribe({
     next: (val) => console.log("next: ", val),
-    complete: () => console.log("complete: "),
+    complete: () => console.log("complete "),
   });
