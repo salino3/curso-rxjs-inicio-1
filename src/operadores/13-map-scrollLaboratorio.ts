@@ -32,7 +32,7 @@ progressBar.setAttribute("class", "progress-bar");
 body.append(progressBar);
 
 // función que haga el calculo
-const calcularPorcantajeScroll = (event) => {
+const calcularPorcantajeScroll = (event: any) => {
   const { scrollTop, scrollHeight, clientHeight } =
     event.target.documentElement;
 

@@ -7,9 +7,9 @@ numeros$
     tap((x) => {
       console.log("antes: ", x);
       return 100;
-      // el return no cambia directamente flujo de información
+      // el return no cambia directamente el flujo de información
     }),
-    map((val) => (val * 10).toString()), // el toString() dentro del 'map'
+    map((val) => (val * 10).toString()), // el toString() debe estar dentro del 'map'
     tap({
       next: (valor) => console.log("después: ", valor),
       complete: () => console.log("Se terminó todo"),
