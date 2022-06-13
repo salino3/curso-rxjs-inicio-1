@@ -94,3 +94,24 @@ ol {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
 }
+
+#miBoton{
+  margin: 1em;
+  width: 10em;
+  border-radius: 5em 35em;
+}
+
+.divindex{
+  border: solid 3px red;
+  width: 220px;
+  height: 100px;
+  margin-left: 100px;
+}
+
+
+#divindex2{
+  border: solid 3px blueviolet;
+  width: 100px;
+  height: 90px;
+  margin: 60px;
+}
