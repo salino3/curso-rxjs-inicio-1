@@ -18,15 +18,15 @@ const intervalo$ = new Observable<number>((subs) => {
 /* Subject() tipo especial observable
 1) Casteo múltiple: muchos 'subscriber' se subscriben al mismo 'observable' y van a tener todos la misma información
 2) También es un observer
-3) Se puede manejar 'Next','error' y 'complete'
+3) Se puede manejar con 'next','error' y 'complete'
 */
 const subject$ = new Subject();
 const subscription = intervalo$.subscribe(subject$);
 
-// const subs1 = intervalo$.subscribe((rnd) => console.log("subscription", rnd));
-// const subs2 = intervalo$.subscribe((rnd) => console.log("suscrizione2", rnd));
+// const subs1 = intervalo$.subscribe((random) => console.log("subscription", random));
+// const subs2 = intervalo$.subscribe((random) => console.log("suscrizione2", random));
 
-const subs1 = subject$.subscribe((rnd) => console.log("subscription", rnd));
+const subs1 = subject$.subscribe((random) => console.log("subscription", random));
 const subs2 = subject$.subscribe(observer);
 
 setTimeout(() => {

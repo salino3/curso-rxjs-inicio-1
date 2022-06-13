@@ -4,6 +4,7 @@ import { takeUntil, skip, tap } from "rxjs/operators";
 const D = document.createElement("div");
 // creando una class aquí, luego se puede modificar el elemento con CSS
 D.setAttribute("class", "divindex");
+D.innerHTML = "div con el botón";
 document.querySelector("body").append(D);
 
 const boton = document.createElement("button");
