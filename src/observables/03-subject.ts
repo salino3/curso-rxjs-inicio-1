@@ -16,7 +16,7 @@ const intervalo$ = new Observable<number>((subs) => {
 
 //
 /* Subject() tipo especial observable
-1) Casteo múltiple: muchos 'subscriber' se subscriben al mismo 'observable' y van a tener todos la misma información
+1) (multicasting) Casteo múltiple: muchos 'subscriber' se subscriben al mismo 'observable' y van a tener todos la misma información
 2) También es un observer
 3) Se puede manejar con 'next','error' y 'complete'
 */
