@@ -8,7 +8,7 @@ const click$ = fromEvent<MouseEvent>(document, 'click');
 click$
   .pipe(
     map(({ x, y }) => ({ x, y })),
-    takeWhile(({ y }) => y <= 150, true) // inclusive es true, emite el valor del último click
+    takeWhile(({ y }) => y <= 150, true) // parametro 'inclusive' es true, emite el valor del último click
   )
   .subscribe({
     next: (val) => console.log("next: ", val),

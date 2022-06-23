@@ -44,9 +44,9 @@ input$
     ),
     pluck("items")
   )
-  //.subscribe(mostraDatos);
+  .subscribe(mostraDatos);
 
-// nuevo ejercicio con nueva url  
+// nuevo ejercicio con nuevo url  
 const url = 'https://httpbin.org/delay/1?arg=';
 // switchMap se desuscribe de anteriores suscripciones, se subscribe a la última
 input$.pipe(
